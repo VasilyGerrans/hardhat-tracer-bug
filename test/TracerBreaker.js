@@ -1,5 +1,3 @@
-const { tracer } = require("hardhat");
-
 const aavePoolAddress = "0x794a61358D6845594F94dc1DB02A252b5b4814aD";
 const wavaxAddress = "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7";
 
@@ -12,8 +10,7 @@ describe("TracerBreaker", function () {
   });
 
   it("performs break", async () => {
-    const amount = "100000000000000000000";
-    tracer.enabled = true;
+    const amount = "1000000000000000000";
     await tracerBreaker.breaker(
       aavePoolAddress,
       wavaxAddress,
@@ -23,6 +20,5 @@ describe("TracerBreaker", function () {
         value: amount,
       }
     );
-    tracer.enabled = false;
   });
 });

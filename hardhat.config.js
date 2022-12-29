@@ -11,10 +11,17 @@ module.exports = {
         timeout: 0,
       },
     },
+    forked: {
+      url: 'http://127.0.0.1:8545',
+      timeout: 0,
+    },
   },
   namedAccounts: {
     deployer: {
       default: 0,
     },
+  },
+  mocha: {
+    timeout: 0,
   },
 };

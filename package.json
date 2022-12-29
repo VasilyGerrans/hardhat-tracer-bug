@@ -11,6 +11,6 @@
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.1",
     "ethers": "^5.7.2",
-    "hardhat-tracer": "1.2.0"
+    "hardhat-tracer": "^2.0.0-beta.6"
   }
 }
